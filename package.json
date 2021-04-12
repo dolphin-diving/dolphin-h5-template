@@ -1,16 +1,61 @@
 {
-  "name": "dolphin-h5-template",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "github_dolphin:dolphin-diving/dolphin-h5-template.git"
-  },
-  "keywords": [],
-  "author": "zoiew <wscats@126.com> (https://github.com/zoiewLeung)",
-  "license": "MIT"
-}
+    "name": "dolphin-h5-template",
+    "version": "0.2.1",
+    "author": "linanyi",
+    "private": true,
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build --mode production",
+      "dev": "vue-cli-service build --mode development",
+      "lint": "eslint --ext .js,.vue src",
+      "lint:fix": "eslint --ext .js,.vue src --fix . && echo 'Lint complete.'"
+    },
+    "dependencies": {
+      "axios": "^0.18.0",
+      "babel-plugin-transform-remove-console": "^6.9.4",
+      "core-js": "^2.6.5",
+      "fastclick": "^1.0.6",
+      "js-base64": "^3.5.2",
+      "lib-flexible": "^0.3.2",
+      "postcss-px2rem-exclude": "0.0.6",
+      "qrcode": "^1.4.4",
+      "qs": "^6.9.0",
+      "regenerator-runtime": "^0.13.5",
+      "uglifyjs-webpack-plugin": "^2.2.0",
+      "vconsole": "^3.3.4",
+      "vue": "^2.6.10",
+      "vue-router": "^3.0.3",
+      "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+      "@vue/cli-plugin-babel": "^3.7.0",
+      "@vue/cli-plugin-eslint": "^3.3.0",
+      "@vue/cli-service": "^3.7.0",
+      "@vue/eslint-config-standard": "^4.0.0",
+      "autoprefixer": "^7.1.2",
+      "babel-eslint": "^10.1.0",
+      "eslint": "^5.16.0",
+      "eslint-config-standard": "^6.2.1",
+      "eslint-friendly-formatter": "^2.0.7",
+      "eslint-loader": "^1.7.1",
+      "eslint-plugin-html": "^2.0.0",
+      "eslint-plugin-promise": "^3.4.0",
+      "eslint-plugin-standard": "^2.0.1",
+      "eslint-plugin-vue": "^5.2.3",
+      "node-sass": "^4.14.1",
+      "pre-commit": "^1.2.2",
+      "px2rem-loader": "^0.1.9",
+      "sass-loader": "^9.0.1",
+      "vue-style-loader": "^3.0.1",
+      "vue-template-compiler": "^2.5.21"
+    },
+    "eslintConfig": {
+      "env": {
+        "es6": true,
+        "node": true,
+        "browser": true,
+        "jquery": true
+      }
+    }
+  }
+  
