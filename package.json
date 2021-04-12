@@ -1,0 +1,16 @@
+{
+  "name": "dolphin-h5-template",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github_dolphin:dolphin-diving/dolphin-h5-template.git"
+  },
+  "keywords": [],
+  "author": "zoiew <wscats@126.com> (https://github.com/zoiewLeung)",
+  "license": "MIT"
+}
