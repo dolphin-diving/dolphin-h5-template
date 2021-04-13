@@ -44,7 +44,7 @@ export default (function() {
         console.log('hello')
     }
 /**
- * 
+ * 获取微信签名
  * @param {*} ctx 
  * @param {*} callback 获取签名成功后回调函数
  * @param {Object} options 参数配置项
