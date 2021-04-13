@@ -48,8 +48,8 @@ export default (function() {
  * @param {*} ctx 
  * @param {*} callback 获取签名成功后回调函数
  * @param {Object} options 参数配置项
- * @param {String} options.appKey 实际的appKey
- * @param {String} options.url 实际的appKey
+ * @param {String} options.appKey 实际的 appKey
+ * @param {String} options.url 实际的 url
  * 
  */
     function getSignature(ctx, options = {}, callback) {
