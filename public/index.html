@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://www.smartmidea.net/activity/sit/202010/common/iosbridge.js"></script>
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but meiju-h5-activity doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<script>
+	if ((navigator.userAgent.toLowerCase()).match(/MicroMessenger/i) == 'micromessenger') {
+		// 动态加载微信jssdk
+		const script = document.createElement('script')
+		script.type = 'text/javascript'
+		script.src = 'https://res.wx.qq.com/open/js/jweixin-1.6.0.js'
+		document.body.appendChild(script)
+	}
+</script>
+<script>
+	(function(win, export_obj) {
+		win['TeaAnalyticsObject'] = export_obj;
+		if (!win[export_obj]) {
+			function _collect() {
+				_collect.q.push(arguments);
+			}
+			_collect.q = _collect.q || [];
+			win[export_obj] = _collect;
+		}
+		win[export_obj].l = +new Date();
+	})(window, 'collectEvent');
+</script>
+<script async src="https://sf1-scmcdn-tos.pstatp.com/goofy/log-sdk/collect/collect-autotrack-rangers.js"></script>
+</body>
+</html>
